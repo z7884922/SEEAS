@@ -1,0 +1,1140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GroupMng</class>
+ <widget class="QWidget" name="GroupMng">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>801</width>
+    <height>470</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>GroupMng</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>true</bool>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_7">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_5">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QLabel" name="groupLabel">
+         <property name="text">
+          <string>分组号：   001</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QLabel" name="projectLabel">
+         <property name="text">
+          <string>项目名称：</string>
+         </property>
+         <property name="buddy">
+          <cstring>projectLineEdit</cstring>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="projectLineEdit">
+         <property name="styleSheet">
+          <string notr="true">border:2px solid black;
+border-radius:10px;
+padding:0 8px;
+selection-background-color:darkgray;
+border-style:outset;</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_5">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>258</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QGroupBox" name="groupBox1">
+       <property name="title">
+        <string>成员1</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="0" column="0">
+           <widget class="QLabel" name="stuNumLabel">
+            <property name="text">
+             <string>学号：</string>
+            </property>
+            <property name="buddy">
+             <cstring>stuNumLine</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="stuNumLine"/>
+          </item>
+          <item row="0" column="2">
+           <widget class="QLabel" name="nameLabel">
+            <property name="text">
+             <string>姓名:</string>
+            </property>
+            <property name="buddy">
+             <cstring>nameLine</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="3">
+           <widget class="QLineEdit" name="nameLine"/>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="workLabel">
+            <property name="text">
+             <string>分工：</string>
+            </property>
+            <property name="buddy">
+             <cstring>comboBox</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QComboBox" name="comboBox">
+            <item>
+             <property name="text">
+              <string>（下拉选择）</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>项目组长</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>需求分析负责人</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>设计负责人</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>编码负责人</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>测试负责人</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>用户代表</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item row="1" column="2">
+           <widget class="QLabel" name="phoneLabel">
+            <property name="text">
+             <string>电话:</string>
+            </property>
+            <property name="buddy">
+             <cstring>phoneLine</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="3">
+           <widget class="QLineEdit" name="phoneLine"/>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="e_mailLabel">
+            <property name="text">
+             <string>E-mail:</string>
+            </property>
+            <property name="buddy">
+             <cstring>e_mailLine</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="3">
+           <widget class="QPushButton" name="addButton_1">
+            <property name="text">
+             <string>添加成员</string>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+            <property name="autoDefault">
+             <bool>false</bool>
+            </property>
+            <property name="default">
+             <bool>false</bool>
+            </property>
+            <property name="flat">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1" colspan="2">
+           <widget class="QLineEdit" name="e_mailLine">
+            <property name="styleSheet">
+             <string notr="true">QLineEdit{
+border:2px solid gray;
+border-radius:10px;
+padding:0 8px;
+border-style:outset;
+}</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>13</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QGroupBox" name="groupBox1_2">
+       <property name="title">
+        <string>成员2</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <layout class="QGridLayout" name="gridLayout_3">
+          <item row="0" column="0">
+           <widget class="QLabel" name="stuNumLabel_3">
+            <property name="text">
+             <string>学号：</string>
+            </property>
+            <property name="buddy">
+             <cstring>stuNumLine_3</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="stuNumLine_3"/>
+          </item>
+          <item row="0" column="2">
+           <widget class="QLabel" name="nameLabel_3">
+            <property name="text">
+             <string>姓名:</string>
+            </property>
+            <property name="buddy">
+             <cstring>nameLine_3</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="3">
+           <widget class="QLineEdit" name="nameLine_3"/>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="workLabel_3">
+            <property name="text">
+             <string>分工：</string>
+            </property>
+            <property name="buddy">
+             <cstring>comboBox_3</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QComboBox" name="comboBox_3">
+            <item>
+             <property name="text">
+              <string>（下拉选择）</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>项目组长</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>需求分析负责人</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>设计负责人</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>编码负责人</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>测试负责人</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>用户代表</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item row="1" column="2">
+           <widget class="QLabel" name="phoneLabel_3">
+            <property name="text">
+             <string>电话:</string>
+            </property>
+            <property name="buddy">
+             <cstring>phoneLine_3</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="3">
+           <widget class="QLineEdit" name="phoneLine_3"/>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="e_mailLabel_3">
+            <property name="text">
+             <string>E-mail:</string>
+            </property>
+            <property name="buddy">
+             <cstring>e_mailLine_3</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="3">
+           <widget class="QPushButton" name="addButton_3">
+            <property name="text">
+             <string>添加成员</string>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+            <property name="autoDefault">
+             <bool>true</bool>
+            </property>
+            <property name="default">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1" colspan="2">
+           <widget class="QLineEdit" name="e_mailLine_3">
+            <property name="styleSheet">
+             <string notr="true">QLineEdit{
+border:2px solid gray;
+border-radius:10px;
+padding:0 8px;
+border-style:outset;
+}</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>13</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <widget class="QGroupBox" name="groupBox1_3">
+       <property name="title">
+        <string>成员3</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <layout class="QGridLayout" name="gridLayout_4">
+          <item row="0" column="0">
+           <widget class="QLabel" name="stuNumLabel_4">
+            <property name="text">
+             <string>学号：</string>
+            </property>
+            <property name="buddy">
+             <cstring>stuNumLine_4</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="stuNumLine_4"/>
+          </item>
+          <item row="0" column="2">
+           <widget class="QLabel" name="nameLabel_4">
+            <property name="text">
+             <string>姓名:</string>
+            </property>
+            <property name="buddy">
+             <cstring>nameLine_4</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="3">
+           <widget class="QLineEdit" name="nameLine_4"/>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="workLabel_4">
+            <property name="text">
+             <string>分工：</string>
+            </property>
+            <property name="buddy">
+             <cstring>comboBox_4</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QComboBox" name="comboBox_4">
+            <item>
+             <property name="text">
+              <string>（下拉选择）</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>项目组长</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>需求分析负责人</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>设计负责人</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>编码负责人</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>测试负责人</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>用户代表</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item row="1" column="2">
+           <widget class="QLabel" name="phoneLabel_4">
+            <property name="text">
+             <string>电话:</string>
+            </property>
+            <property name="buddy">
+             <cstring>phoneLine_4</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="3">
+           <widget class="QLineEdit" name="phoneLine_4"/>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="e_mailLabel_4">
+            <property name="text">
+             <string>E-mail:</string>
+            </property>
+            <property name="buddy">
+             <cstring>e_mailLine_4</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="3">
+           <widget class="QPushButton" name="addButton_4">
+            <property name="text">
+             <string>添加成员</string>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+            <property name="autoDefault">
+             <bool>true</bool>
+            </property>
+            <property name="default">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1" colspan="2">
+           <widget class="QLineEdit" name="e_mailLine_4">
+            <property name="styleSheet">
+             <string notr="true">QLineEdit{
+border:2px solid gray;
+border-radius:10px;
+padding:0 8px;
+border-style:outset;
+}</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_3">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>13</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QGroupBox" name="groupBox1_4">
+       <property name="title">
+        <string>成员4</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <layout class="QGridLayout" name="gridLayout_6">
+          <item row="0" column="0">
+           <widget class="QLabel" name="stuNumLabel_6">
+            <property name="text">
+             <string>学号：</string>
+            </property>
+            <property name="buddy">
+             <cstring>stuNumLine_6</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="stuNumLine_6"/>
+          </item>
+          <item row="0" column="2">
+           <widget class="QLabel" name="nameLabel_6">
+            <property name="text">
+             <string>姓名:</string>
+            </property>
+            <property name="buddy">
+             <cstring>nameLine_6</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="3">
+           <widget class="QLineEdit" name="nameLine_6"/>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="workLabel_6">
+            <property name="text">
+             <string>分工：</string>
+            </property>
+            <property name="buddy">
+             <cstring>comboBox_6</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QComboBox" name="comboBox_6">
+            <item>
+             <property name="text">
+              <string>（下拉选择）</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>项目组长</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>需求分析负责人</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>设计负责人</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>编码负责人</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>测试负责人</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>用户代表</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item row="1" column="2">
+           <widget class="QLabel" name="phoneLabel_6">
+            <property name="text">
+             <string>电话:</string>
+            </property>
+            <property name="buddy">
+             <cstring>phoneLine_6</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="3">
+           <widget class="QLineEdit" name="phoneLine_6"/>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="e_mailLabel_6">
+            <property name="text">
+             <string>E-mail:</string>
+            </property>
+            <property name="buddy">
+             <cstring>e_mailLine_6</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="3">
+           <widget class="QPushButton" name="addButton_6">
+            <property name="text">
+             <string>添加成员</string>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+            <property name="autoDefault">
+             <bool>true</bool>
+            </property>
+            <property name="default">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1" colspan="2">
+           <widget class="QLineEdit" name="e_mailLine_6">
+            <property name="styleSheet">
+             <string notr="true">QLineEdit{
+border:2px solid gray;
+border-radius:10px;
+padding:0 8px;
+border-style:outset;
+}</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <spacer name="verticalSpacer_6">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>13</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_4">
+     <item>
+      <widget class="QGroupBox" name="groupBox1_5">
+       <property name="title">
+        <string>成员5</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_5">
+        <item>
+         <layout class="QGridLayout" name="gridLayout_7">
+          <item row="0" column="0">
+           <widget class="QLabel" name="stuNumLabel_7">
+            <property name="text">
+             <string>学号：</string>
+            </property>
+            <property name="buddy">
+             <cstring>stuNumLine_7</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="stuNumLine_7"/>
+          </item>
+          <item row="0" column="2">
+           <widget class="QLabel" name="nameLabel_7">
+            <property name="text">
+             <string>姓名:</string>
+            </property>
+            <property name="buddy">
+             <cstring>nameLine_7</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="3">
+           <widget class="QLineEdit" name="nameLine_7"/>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="workLabel_7">
+            <property name="text">
+             <string>分工：</string>
+            </property>
+            <property name="buddy">
+             <cstring>comboBox_7</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QComboBox" name="comboBox_7">
+            <item>
+             <property name="text">
+              <string>（下拉选择）</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>项目组长</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>需求分析负责人</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>设计负责人</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>编码负责人</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>测试负责人</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>用户代表</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item row="1" column="2">
+           <widget class="QLabel" name="phoneLabel_7">
+            <property name="text">
+             <string>电话:</string>
+            </property>
+            <property name="buddy">
+             <cstring>phoneLine_7</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="3">
+           <widget class="QLineEdit" name="phoneLine_7"/>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="e_mailLabel_7">
+            <property name="text">
+             <string>E-mail:</string>
+            </property>
+            <property name="buddy">
+             <cstring>e_mailLine_7</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="3">
+           <widget class="QPushButton" name="addButton_7">
+            <property name="text">
+             <string>添加成员</string>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+            <property name="autoDefault">
+             <bool>true</bool>
+            </property>
+            <property name="default">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1" colspan="2">
+           <widget class="QLineEdit" name="e_mailLine_7">
+            <property name="styleSheet">
+             <string notr="true">QLineEdit{
+border:2px solid gray;
+border-radius:10px;
+padding:0 8px;
+border-style:outset;
+}</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_4">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>13</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QGroupBox" name="groupBox1_6">
+       <property name="title">
+        <string>成员6</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_6">
+        <item>
+         <layout class="QGridLayout" name="gridLayout_8">
+          <item row="0" column="0">
+           <widget class="QLabel" name="stuNumLabel_8">
+            <property name="text">
+             <string>学号：</string>
+            </property>
+            <property name="buddy">
+             <cstring>stuNumLine_8</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="stuNumLine_8"/>
+          </item>
+          <item row="0" column="2">
+           <widget class="QLabel" name="nameLabel_8">
+            <property name="text">
+             <string>姓名:</string>
+            </property>
+            <property name="buddy">
+             <cstring>nameLine_8</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="3">
+           <widget class="QLineEdit" name="nameLine_8"/>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="workLabel_8">
+            <property name="text">
+             <string>分工：</string>
+            </property>
+            <property name="buddy">
+             <cstring>comboBox_8</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QComboBox" name="comboBox_8">
+            <item>
+             <property name="text">
+              <string>（下拉选择）</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>项目组长</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>需求分析负责人</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>设计负责人</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>编码负责人</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>测试负责人</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>用户代表</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item row="1" column="2">
+           <widget class="QLabel" name="phoneLabel_8">
+            <property name="text">
+             <string>电话:</string>
+            </property>
+            <property name="buddy">
+             <cstring>phoneLine_8</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="3">
+           <widget class="QLineEdit" name="phoneLine_8"/>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="e_mailLabel_8">
+            <property name="text">
+             <string>E-mail:</string>
+            </property>
+            <property name="buddy">
+             <cstring>e_mailLine_8</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="3">
+           <widget class="QPushButton" name="addButton_8">
+            <property name="text">
+             <string>添加成员</string>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+            <property name="autoDefault">
+             <bool>true</bool>
+            </property>
+            <property name="default">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1" colspan="2">
+           <widget class="QLineEdit" name="e_mailLine_8">
+            <property name="styleSheet">
+             <string notr="true">QLineEdit{
+border:2px solid gray;
+border-radius:10px;
+padding:0 8px;
+border-style:outset;
+}</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <spacer name="verticalSpacer_5">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>13</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>projectLineEdit</tabstop>
+  <tabstop>stuNumLine</tabstop>
+  <tabstop>nameLine</tabstop>
+  <tabstop>comboBox</tabstop>
+  <tabstop>phoneLine</tabstop>
+  <tabstop>e_mailLine</tabstop>
+  <tabstop>addButton_1</tabstop>
+  <tabstop>stuNumLine_3</tabstop>
+  <tabstop>nameLine_3</tabstop>
+  <tabstop>comboBox_3</tabstop>
+  <tabstop>phoneLine_3</tabstop>
+  <tabstop>addButton_3</tabstop>
+  <tabstop>e_mailLine_3</tabstop>
+  <tabstop>stuNumLine_4</tabstop>
+  <tabstop>nameLine_4</tabstop>
+  <tabstop>comboBox_4</tabstop>
+  <tabstop>phoneLine_4</tabstop>
+  <tabstop>addButton_4</tabstop>
+  <tabstop>e_mailLine_4</tabstop>
+  <tabstop>stuNumLine_6</tabstop>
+  <tabstop>nameLine_6</tabstop>
+  <tabstop>comboBox_6</tabstop>
+  <tabstop>phoneLine_6</tabstop>
+  <tabstop>addButton_6</tabstop>
+  <tabstop>e_mailLine_6</tabstop>
+  <tabstop>stuNumLine_7</tabstop>
+  <tabstop>nameLine_7</tabstop>
+  <tabstop>comboBox_7</tabstop>
+  <tabstop>phoneLine_7</tabstop>
+  <tabstop>addButton_7</tabstop>
+  <tabstop>e_mailLine_7</tabstop>
+  <tabstop>stuNumLine_8</tabstop>
+  <tabstop>nameLine_8</tabstop>
+  <tabstop>comboBox_8</tabstop>
+  <tabstop>phoneLine_8</tabstop>
+  <tabstop>addButton_8</tabstop>
+  <tabstop>e_mailLine_8</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>addButton_1</sender>
+   <signal>clicked()</signal>
+   <receiver>groupBox1_2</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>369</x>
+     <y>125</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>368</x>
+     <y>188</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>addButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>groupBox1_3</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>333</x>
+     <y>272</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>352</x>
+     <y>334</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>addButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>groupBox1_4</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>353</x>
+     <y>417</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>352</x>
+     <y>479</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>addButton_6</sender>
+   <signal>clicked()</signal>
+   <receiver>groupBox1_5</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>356</x>
+     <y>563</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>354</x>
+     <y>628</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>addButton_7</sender>
+   <signal>clicked()</signal>
+   <receiver>groupBox1_6</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>353</x>
+     <y>705</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>365</x>
+     <y>770</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

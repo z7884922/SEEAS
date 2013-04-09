@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Resources/calculator.png</file>
+        <file>Resources/database.png</file>
+        <file>Resources/generate-tables.png</file>
+        <file>Resources/open-file.png</file>
+        <file>Resources/preview-tabels.png</file>
+        <file>Resources/reset.png</file>
+        <file>Resources/save.png</file>
+        <file>Resources/splash.png</file>
+        <file>Resources/splash1.jpg</file>
+        <file>Resources/system.png</file>
+        <file>Resources/toolbar.png</file>
+        <file>Resources/29.png</file>
+        <file>Resources/computer.png</file>
+    </qresource>
+</RCC>

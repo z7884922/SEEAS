@@ -1,0 +1,39 @@
+﻿生成启动时间为 2013/4/9 13:26:44。
+     1>项目“D:\Documents\Visual_Studio_2010\Projects\SEEAS\SEEAS\SEEAS.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“Debug\SEEAS.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       CustomBuild:
+         所有输出均为最新。
+       ClCompile:
+         所有输出均为最新。
+         所有输出均为最新。
+       Link:
+         所有输出均为最新。
+         E:\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Documents\Visual_Studio_2010\Projects\SEEAS\Win32\Debug\\SEEAS.exe" /NOLOGO /LIBPATH:E:\Qt\4.8.4\lib qtmaind.lib QtCored4.lib QtGuid4.lib QtSqld4.lib ./sqlite_dll/sqlite3.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\SEEAS.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\Documents\Visual_Studio_2010\Projects\SEEAS\Win32\Debug\SEEAS.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Documents\Visual_Studio_2010\Projects\SEEAS\Win32\Debug\SEEAS.lib" /MACHINE:X86 Debug\docummng.obj
+         Debug\moc_docummng.obj
+         Debug\moc_groupmng.obj
+         Debug\moc_indentity.obj
+         Debug\moc_indicatemng.obj
+         Debug\moc_seeas.obj
+         Debug\moc_stackeddlg.obj
+         Debug\moc_welcome.obj
+         Debug\qrc_seeas.obj
+         Debug\groupmng.obj
+         Debug\indentity.obj
+         Debug\indicatemng.obj
+         Debug\main.obj
+         Debug\seeas.obj
+         Debug\stackeddlg.obj
+         Debug\welcome.obj
+         LINK : 没有找到 D:\Documents\Visual_Studio_2010\Projects\SEEAS\Win32\Debug\\SEEAS.exe 或上一个增量链接没有生成它；正在执行完全链接
+         SEEAS.vcxproj -> D:\Documents\Visual_Studio_2010\Projects\SEEAS\Win32\Debug\SEEAS.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"D:\Documents\Visual_Studio_2010\Projects\SEEAS\Win32\Debug\\SEEAS.exe;#1" /manifest Debug\SEEAS.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         正在删除文件“Debug\SEEAS.unsuccessfulbuild”。
+         正在对“Debug\SEEAS.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“D:\Documents\Visual_Studio_2010\Projects\SEEAS\SEEAS\SEEAS.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:05.85
